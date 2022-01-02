@@ -29,7 +29,7 @@ const main = async () => {
 
     for (var i = 0; i < totalMinted.length; i++) {
         const uri = await nftContract.methods.tokenURI(totalMinted[i]).call()
-        console.log(`Metadata URI for token ${totalMinted[i]}: ${uri}`)
+        console.log(`Metadata URI for token: ${totalMinted[i]}: ${uri}`)
     }
 }
 
